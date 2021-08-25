@@ -25,7 +25,7 @@ var answerBank = ["a", "c", "c", "b", "a"]
 
 function quiz(question, answer){
   for(i=0; i<5; i++){
-    question = readLineSync.question(questionBank[i])
+    question = readLineSync.question(questionBank[i]+'\n> ')
     answer = answerBank[i]+"\n\n"
     if(question === answerBank[i]){
       score++
